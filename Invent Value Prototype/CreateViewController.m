@@ -8,7 +8,9 @@
 
 #import "CreateViewController.h"
 
-@interface CreateViewController ()
+@interface CreateViewController () <UIActionSheetDelegate,UIImagePickerControllerDelegate, UIActivityItemSource>
+@property (weak, nonatomic) IBOutlet UIToolbar *cameraBarButton;
+@property (strong,nonatomic) UIActionSheet *myActionSheet;
 
 @end
 
@@ -23,6 +25,43 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (IBAction)cancelButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)CameraButtonPressed:(id)sender {
+    self.myActionSheet = [[UIActionSheet alloc] initWithTitle:@"Photos" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"Delete Photo" otherButtonTitles:@"Take Photo",@"Choose Photo", nil];
+    
+    [self.myActionSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    imagePicker.delegate = self;
+    imagePicker.allowsEditing = YES;
+    
+    if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Take Photo"]) {
+        
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+    } else if ([[actionSheet buttonTitleAtIndex:buttonIndex] isEqualToString:@"Choose Photo" ]) {
+        
+        imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+        
+    } else {
+        
+        return;
+        
+    }
+    
+    [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+
 
 /*
 #pragma mark - Navigation

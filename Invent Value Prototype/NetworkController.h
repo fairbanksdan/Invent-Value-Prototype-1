@@ -10,4 +10,12 @@
 
 @interface NetworkController : NSObject
 
+-(void)handleOAuthCallbackWithURL:(NSURL *)url;
+
+//-(void)retrieveReposForCurrentUser:(void(^)(NSMutableArray *repos))completionBlock;
+
+-(void)requestOAuthAccess:(id)sender withCompletion:(void(^)())completionOfOAuthAccess;
+
+-(BOOL)checkForToken;
+
 @end

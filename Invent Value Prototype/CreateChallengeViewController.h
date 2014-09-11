@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CreateChallengeViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
