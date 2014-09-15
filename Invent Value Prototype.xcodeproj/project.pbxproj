@@ -14,6 +14,13 @@
 		D67693F119C12E1B001D87F1 /* IdeateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F019C12E1B001D87F1 /* IdeateSectionHeader.png */; };
 		D67693F519C233A5001D87F1 /* CollaborateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F419C233A5001D87F1 /* CollaborateSectionHeader.png */; };
 		D67693F719C23581001D87F1 /* EvaluateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F619C23581001D87F1 /* EvaluateSectionHeader.png */; };
+		D676940319C2516B001D87F1 /* DocumentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D676940219C2516B001D87F1 /* DocumentPickerViewController.m */; };
+		D676940519C2516B001D87F1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D676940419C2516B001D87F1 /* MainInterface.storyboard */; };
+		D676941119C2516B001D87F1 /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D676941019C2516B001D87F1 /* FileProvider.m */; };
+		D676941419C2516B001D87F1 /* IdeaAttachmentFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D676940A19C2516B001D87F1 /* IdeaAttachmentFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D676941919C2516B001D87F1 /* IdeaAttachment.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D67693FC19C2516B001D87F1 /* IdeaAttachment.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D67C0CD819C7738500749382 /* DescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */; };
+		D68698EC19C39E21005E5A46 /* ChallengeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68698EB19C39E21005E5A46 /* ChallengeDetailViewController.m */; };
 		D68FD724199D391C00D0B478 /* createPopover.png in Resources */ = {isa = PBXBuildFile; fileRef = D68FD723199D391C00D0B478 /* createPopover.png */; };
 		D68FD726199D3A3000D0B478 /* createPopover2.png in Resources */ = {isa = PBXBuildFile; fileRef = D68FD725199D3A3000D0B478 /* createPopover2.png */; };
 		D68FD72A199D3EA300D0B478 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D68FD729199D3EA300D0B478 /* AVFoundation.framework */; };
@@ -55,6 +62,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D676941219C2516B001D87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B65830199BE8FB0037E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676940919C2516B001D87F1;
+			remoteInfo = IdeaAttachmentFileProvider;
+		};
+		D676941519C2516B001D87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B65830199BE8FB0037E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D676940919C2516B001D87F1;
+			remoteInfo = IdeaAttachmentFileProvider;
+		};
+		D676941719C2516B001D87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B65830199BE8FB0037E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67693FB19C2516B001D87F1;
+			remoteInfo = IdeaAttachment;
+		};
+		D676941A19C2516B001D87F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6B65830199BE8FB0037E77B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D67693FB19C2516B001D87F1;
+			remoteInfo = IdeaAttachment;
+		};
 		D6B6584F199BE8FB0037E77B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D6B65830199BE8FB0037E77B /* Project object */;
@@ -64,6 +99,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D676942219C2516B001D87F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D676941919C2516B001D87F1 /* IdeaAttachment.appex in Embed App Extensions */,
+				D676941419C2516B001D87F1 /* IdeaAttachmentFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D6064A1319A2C14C0004281F /* ChallengesBackgroundImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesBackgroundImage1.png; sourceTree = "<group>"; };
 		D6492B3B19BF5B5F00E1FFD8 /* Invent Value Crown 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Invent Value Crown 120.png"; sourceTree = "<group>"; };
@@ -72,6 +122,21 @@
 		D67693F019C12E1B001D87F1 /* IdeateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IdeateSectionHeader.png; sourceTree = "<group>"; };
 		D67693F419C233A5001D87F1 /* CollaborateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CollaborateSectionHeader.png; sourceTree = "<group>"; };
 		D67693F619C23581001D87F1 /* EvaluateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EvaluateSectionHeader.png; sourceTree = "<group>"; };
+		D67693FC19C2516B001D87F1 /* IdeaAttachment.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IdeaAttachment.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D67693FF19C2516B001D87F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D676940019C2516B001D87F1 /* IdeaAttachment.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = IdeaAttachment.entitlements; sourceTree = "<group>"; };
+		D676940119C2516B001D87F1 /* DocumentPickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DocumentPickerViewController.h; sourceTree = "<group>"; };
+		D676940219C2516B001D87F1 /* DocumentPickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DocumentPickerViewController.m; sourceTree = "<group>"; };
+		D676940419C2516B001D87F1 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		D676940A19C2516B001D87F1 /* IdeaAttachmentFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IdeaAttachmentFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D676940D19C2516B001D87F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D676940E19C2516B001D87F1 /* IdeaAttachmentFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = IdeaAttachmentFileProvider.entitlements; sourceTree = "<group>"; };
+		D676940F19C2516B001D87F1 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
+		D676941019C2516B001D87F1 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		D67C0CD619C7738500749382 /* DescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionTableViewCell.h; sourceTree = "<group>"; };
+		D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTableViewCell.m; sourceTree = "<group>"; };
+		D68698EA19C39E21005E5A46 /* ChallengeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeDetailViewController.h; sourceTree = "<group>"; };
+		D68698EB19C39E21005E5A46 /* ChallengeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeDetailViewController.m; sourceTree = "<group>"; };
 		D68FD723199D391C00D0B478 /* createPopover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createPopover.png; sourceTree = "<group>"; };
 		D68FD725199D3A3000D0B478 /* createPopover2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createPopover2.png; sourceTree = "<group>"; };
 		D68FD729199D3EA300D0B478 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +189,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D67693F919C2516B001D87F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D676940719C2516B001D87F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6B65835199BE8FB0037E77B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -143,6 +222,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D67693FD19C2516B001D87F1 /* IdeaAttachment */ = {
+			isa = PBXGroup;
+			children = (
+				D676940119C2516B001D87F1 /* DocumentPickerViewController.h */,
+				D676940219C2516B001D87F1 /* DocumentPickerViewController.m */,
+				D676940419C2516B001D87F1 /* MainInterface.storyboard */,
+				D67693FE19C2516B001D87F1 /* Supporting Files */,
+			);
+			path = IdeaAttachment;
+			sourceTree = "<group>";
+		};
+		D67693FE19C2516B001D87F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D67693FF19C2516B001D87F1 /* Info.plist */,
+				D676940019C2516B001D87F1 /* IdeaAttachment.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D676940B19C2516B001D87F1 /* IdeaAttachmentFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				D676940F19C2516B001D87F1 /* FileProvider.h */,
+				D676941019C2516B001D87F1 /* FileProvider.m */,
+				D676940C19C2516B001D87F1 /* Supporting Files */,
+			);
+			path = IdeaAttachmentFileProvider;
+			sourceTree = "<group>";
+		};
+		D676940C19C2516B001D87F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D676940D19C2516B001D87F1 /* Info.plist */,
+				D676940E19C2516B001D87F1 /* IdeaAttachmentFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D68FD72D199D52D300D0B478 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +288,8 @@
 				D6B6588F199BE9420037E77B /* IV dashboard.png */,
 				D6B65890199BE9420037E77B /* keyboard.png */,
 				D6B65851199BE8FB0037E77B /* Invent Value PrototypeTests */,
+				D67693FD19C2516B001D87F1 /* IdeaAttachment */,
+				D676940B19C2516B001D87F1 /* IdeaAttachmentFileProvider */,
 				D6B65839199BE8FB0037E77B /* Products */,
 				D68FD72D199D52D300D0B478 /* Frameworks */,
 			);
@@ -180,6 +300,8 @@
 			children = (
 				D6B65838199BE8FB0037E77B /* Invent Value Prototype.app */,
 				D6B6584E199BE8FB0037E77B /* Invent Value PrototypeTests.xctest */,
+				D67693FC19C2516B001D87F1 /* IdeaAttachment.appex */,
+				D676940A19C2516B001D87F1 /* IdeaAttachmentFileProvider.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,10 +382,14 @@
 				D6B658D3199C12F70037E77B /* DashboardViewController.m */,
 				D6B658D7199C22F00037E77B /* CreateViewController.h */,
 				D6B658D8199C22F00037E77B /* CreateViewController.m */,
+				D67C0CD619C7738500749382 /* DescriptionTableViewCell.h */,
+				D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */,
 				D68FD72E199D6C9100D0B478 /* CreateChallengeViewController.h */,
 				D68FD72F199D6C9100D0B478 /* CreateChallengeViewController.m */,
 				D6D2B87B19C0C58100EB20B2 /* NetworkController.h */,
 				D6D2B87C19C0C58100EB20B2 /* NetworkController.m */,
+				D68698EA19C39E21005E5A46 /* ChallengeDetailViewController.h */,
+				D68698EB19C39E21005E5A46 /* ChallengeDetailViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -288,6 +414,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D67693FB19C2516B001D87F1 /* IdeaAttachment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D676941F19C2516B001D87F1 /* Build configuration list for PBXNativeTarget "IdeaAttachment" */;
+			buildPhases = (
+				D67693F819C2516B001D87F1 /* Sources */,
+				D67693F919C2516B001D87F1 /* Frameworks */,
+				D67693FA19C2516B001D87F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdeaAttachment;
+			productName = IdeaAttachment;
+			productReference = D67693FC19C2516B001D87F1 /* IdeaAttachment.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D676940919C2516B001D87F1 /* IdeaAttachmentFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D676941C19C2516B001D87F1 /* Build configuration list for PBXNativeTarget "IdeaAttachmentFileProvider" */;
+			buildPhases = (
+				D676940619C2516B001D87F1 /* Sources */,
+				D676940719C2516B001D87F1 /* Frameworks */,
+				D676940819C2516B001D87F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IdeaAttachmentFileProvider;
+			productName = IdeaAttachmentFileProvider;
+			productReference = D676940A19C2516B001D87F1 /* IdeaAttachmentFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		D6B65837199BE8FB0037E77B /* Invent Value Prototype */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6B65858199BE8FB0037E77B /* Build configuration list for PBXNativeTarget "Invent Value Prototype" */;
@@ -295,10 +455,15 @@
 				D6B65834199BE8FB0037E77B /* Sources */,
 				D6B65835199BE8FB0037E77B /* Frameworks */,
 				D6B65836199BE8FB0037E77B /* Resources */,
+				D676942219C2516B001D87F1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D676941319C2516B001D87F1 /* PBXTargetDependency */,
+				D676941619C2516B001D87F1 /* PBXTargetDependency */,
+				D676941819C2516B001D87F1 /* PBXTargetDependency */,
+				D676941B19C2516B001D87F1 /* PBXTargetDependency */,
 			);
 			name = "Invent Value Prototype";
 			productName = "Invent Value Prototype";
@@ -332,6 +497,14 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Fairbanksdan;
 				TargetAttributes = {
+					D67693FB19C2516B001D87F1 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = NZE8FE4Y4H;
+					};
+					D676940919C2516B001D87F1 = {
+						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = NZE8FE4Y4H;
+					};
 					D6B65837199BE8FB0037E77B = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -356,11 +529,28 @@
 			targets = (
 				D6B65837199BE8FB0037E77B /* Invent Value Prototype */,
 				D6B6584D199BE8FB0037E77B /* Invent Value PrototypeTests */,
+				D67693FB19C2516B001D87F1 /* IdeaAttachment */,
+				D676940919C2516B001D87F1 /* IdeaAttachmentFileProvider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D67693FA19C2516B001D87F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D676940519C2516B001D87F1 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D676940819C2516B001D87F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6B65836199BE8FB0037E77B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,6 +602,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D67693F819C2516B001D87F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D676940319C2516B001D87F1 /* DocumentPickerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D676940619C2516B001D87F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D676941119C2516B001D87F1 /* FileProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D6B65834199BE8FB0037E77B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,8 +626,10 @@
 				D68FD730199D6C9100D0B478 /* CreateChallengeViewController.m in Sources */,
 				D6B658D4199C12F70037E77B /* DashboardViewController.m in Sources */,
 				D6B65844199BE8FB0037E77B /* ViewController.m in Sources */,
+				D67C0CD819C7738500749382 /* DescriptionTableViewCell.m in Sources */,
 				D6B658D9199C22F00037E77B /* CreateViewController.m in Sources */,
 				D6D2B87D19C0C58100EB20B2 /* NetworkController.m in Sources */,
+				D68698EC19C39E21005E5A46 /* ChallengeDetailViewController.m in Sources */,
 				D6B65841199BE8FB0037E77B /* AppDelegate.m in Sources */,
 				D6B6583E199BE8FB0037E77B /* main.m in Sources */,
 			);
@@ -438,6 +646,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D676941319C2516B001D87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D676940919C2516B001D87F1 /* IdeaAttachmentFileProvider */;
+			targetProxy = D676941219C2516B001D87F1 /* PBXContainerItemProxy */;
+		};
+		D676941619C2516B001D87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D676940919C2516B001D87F1 /* IdeaAttachmentFileProvider */;
+			targetProxy = D676941519C2516B001D87F1 /* PBXContainerItemProxy */;
+		};
+		D676941819C2516B001D87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67693FB19C2516B001D87F1 /* IdeaAttachment */;
+			targetProxy = D676941719C2516B001D87F1 /* PBXContainerItemProxy */;
+		};
+		D676941B19C2516B001D87F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D67693FB19C2516B001D87F1 /* IdeaAttachment */;
+			targetProxy = D676941A19C2516B001D87F1 /* PBXContainerItemProxy */;
+		};
 		D6B65850199BE8FB0037E77B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D6B65837199BE8FB0037E77B /* Invent Value Prototype */;
@@ -457,6 +685,68 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D676941D19C2516B001D87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IdeaAttachmentFileProvider/IdeaAttachmentFileProvider.entitlements;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IdeaAttachmentFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D676941E19C2516B001D87F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IdeaAttachmentFileProvider/IdeaAttachmentFileProvider.entitlements;
+				INFOPLIST_FILE = IdeaAttachmentFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D676942019C2516B001D87F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IdeaAttachment/IdeaAttachment.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IdeaAttachment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D676942119C2516B001D87F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = IdeaAttachment/IdeaAttachment.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = IdeaAttachment/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		D6B65856199BE8FB0037E77B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -592,6 +882,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D676941C19C2516B001D87F1 /* Build configuration list for PBXNativeTarget "IdeaAttachmentFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D676941D19C2516B001D87F1 /* Debug */,
+				D676941E19C2516B001D87F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D676941F19C2516B001D87F1 /* Build configuration list for PBXNativeTarget "IdeaAttachment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D676942019C2516B001D87F1 /* Debug */,
+				D676942119C2516B001D87F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D6B65833199BE8FB0037E77B /* Build configuration list for PBXProject "Invent Value Prototype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
