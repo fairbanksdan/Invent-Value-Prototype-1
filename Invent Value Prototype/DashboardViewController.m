@@ -7,7 +7,7 @@
 //
 
 #import "DashboardViewController.h"
-#import "CreateViewController.h"
+#import "CreateTableViewController.h"
 #import "CreateChallengeViewController.h"
 
 @interface DashboardViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -107,6 +107,10 @@
 - (void)viewWillDisappear:(BOOL)animated {
     [self.navigationController setNavigationBarHidden:NO animated:animated];
     [super viewWillDisappear:animated];
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 //- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController

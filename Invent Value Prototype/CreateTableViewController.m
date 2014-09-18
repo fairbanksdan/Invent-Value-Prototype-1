@@ -6,21 +6,54 @@
 //  Copyright (c) 2014 Fairbanksdan. All rights reserved.
 //
 
-#import "CreateViewController.h"
+#import "CreateTableViewController.h"
+#import "Idea.h"
+#import "CategoryTableViewController.h"
 
-@interface CreateViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate,UIImagePickerControllerDelegate, UIActivityItemSource>
+@interface CreateTableViewController () <UITableViewDataSource, UITableViewDelegate, UIActionSheetDelegate,UIImagePickerControllerDelegate, UIActivityItemSource, UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UIToolbar *cameraBarButton;
 @property (strong,nonatomic) UIActionSheet *myActionSheet;
 @property(nonatomic) BOOL clearsOnInsertion;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionPlaceholderText;
+@property (weak, nonatomic) IBOutlet UIPickerView *categoryPickerView;
+@property (strong, nonatomic) NSArray *categoryArray;
+@property (weak, nonatomic) IBOutlet CategoryTableViewController *categoryCell;
 
 @end
 
-@implementation CreateViewController
+@implementation CreateTableViewController
+{
+    NSString *_category;
+}
+
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if ((self = [super initWithCoder:aDecoder])) {
+        _category = @"No Category";
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setNeedsStatusBarAppearanceUpdate];
+    
+    self.categoryArray = [NSArray new];
+    
+    self.categoryArray = @[@"Business Development", @"Operations", @"Human Resources", @"Marketing", @"Finance", @"Strategy", @"IT", @"Leadership", @"No Category"];
+    
+    self.categoryPickerView.delegate = self;
+    
+    if (self.selectedIdea != nil) {
+        self.title = @"Edit Checklist";
+//        self.textField.text = self.checklistToEdit.name;
+//        self.doneBarButton.enabled = YES;
+        _category = self.selectedIdea.category;
+    }
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +98,15 @@
     }
     
     [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.section == 2) {
+        return indexPath;
+    } else {
+        return nil;
+    }
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -124,17 +166,54 @@
 
     }
     
+    
+    
     return cell;
 }
 
-/*
+
+
+#pragma mark -
+#pragma mark PickerView DataSource
+
+- (NSInteger)numberOfComponentsInPickerView:
+(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    return _categoryArray.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    return _categoryArray[row];
+}
+
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+//    
+//    
+//    
+//    
+//}  // Pass the selected object to the new view controller.
+
+#pragma mark - CategoryTableViewControllerDelegate Methods
+
+-(void)categoryPicker:(CategoryTableViewController *)picker didPickCategory:(NSString *)category {
+    _category = category;
+    self.categorySelectedLabel.text = _category;
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
-*/
+
 
 @end

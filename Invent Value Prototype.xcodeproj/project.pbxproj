@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D604D64219C79BE0004E1E5A /* CategoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D604D64119C79BE0004E1E5A /* CategoryTableViewController.m */; };
+		D604D64519C7A001004E1E5A /* Idea.m in Sources */ = {isa = PBXBuildFile; fileRef = D604D64419C7A001004E1E5A /* Idea.m */; };
+		D604D64819C7A78B004E1E5A /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D604D64719C7A78B004E1E5A /* CategoryTableViewCell.m */; };
 		D6064A1419A2C14C0004281F /* ChallengesBackgroundImage1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6064A1319A2C14C0004281F /* ChallengesBackgroundImage1.png */; };
 		D6492B3C19BF5B5F00E1FFD8 /* Invent Value Crown 120.png in Resources */ = {isa = PBXBuildFile; fileRef = D6492B3B19BF5B5F00E1FFD8 /* Invent Value Crown 120.png */; };
 		D6599BF519BA7D1900CA984D /* LoginBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = D6599BF419BA7D1900CA984D /* LoginBackground.png */; };
 		D6599BF719BA82EC00CA984D /* Dashboard_Background.png in Resources */ = {isa = PBXBuildFile; fileRef = D6599BF619BA82EC00CA984D /* Dashboard_Background.png */; };
+		D65D92F119C8F25B00696E1A /* Idea Icon 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92EF19C8F25B00696E1A /* Idea Icon 25.png */; };
+		D65D92F219C8F25B00696E1A /* Idea Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92F019C8F25B00696E1A /* Idea Icon 50.png */; };
+		D65D92F619C8F3D100696E1A /* Team Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92F419C8F3D100696E1A /* Team Icon 50.png */; };
+		D65D92F819C8F49F00696E1A /* Team Icon 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92F719C8F49F00696E1A /* Team Icon 25.png */; };
+		D65D92FB19C8F58100696E1A /* Star Icon 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92F919C8F58100696E1A /* Star Icon 25.png */; };
+		D65D92FC19C8F58100696E1A /* Star Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92FA19C8F58100696E1A /* Star Icon 50.png */; };
+		D65D92FF19C8F6FD00696E1A /* Pencil Icon 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92FD19C8F6FD00696E1A /* Pencil Icon 25.png */; };
+		D65D930019C8F6FD00696E1A /* Pencil Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = D65D92FE19C8F6FD00696E1A /* Pencil Icon 50.png */; };
 		D67693F119C12E1B001D87F1 /* IdeateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F019C12E1B001D87F1 /* IdeateSectionHeader.png */; };
 		D67693F519C233A5001D87F1 /* CollaborateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F419C233A5001D87F1 /* CollaborateSectionHeader.png */; };
 		D67693F719C23581001D87F1 /* EvaluateSectionHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = D67693F619C23581001D87F1 /* EvaluateSectionHeader.png */; };
@@ -19,6 +30,9 @@
 		D676941119C2516B001D87F1 /* FileProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = D676941019C2516B001D87F1 /* FileProvider.m */; };
 		D676941419C2516B001D87F1 /* IdeaAttachmentFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D676940A19C2516B001D87F1 /* IdeaAttachmentFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D676941919C2516B001D87F1 /* IdeaAttachment.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D67693FC19C2516B001D87F1 /* IdeaAttachment.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D67781C719C8EDFA00DE3BDB /* Home Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D67781C619C8EDFA00DE3BDB /* Home Icon.png */; };
+		D67781C919C8EEC000DE3BDB /* Home Icon 25.png in Resources */ = {isa = PBXBuildFile; fileRef = D67781C819C8EEC000DE3BDB /* Home Icon 25.png */; };
+		D67781CB19C8EEC800DE3BDB /* Home Icon 50.png in Resources */ = {isa = PBXBuildFile; fileRef = D67781CA19C8EEC800DE3BDB /* Home Icon 50.png */; };
 		D67C0CD819C7738500749382 /* DescriptionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */; };
 		D68698EC19C39E21005E5A46 /* ChallengeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D68698EB19C39E21005E5A46 /* ChallengeDetailViewController.m */; };
 		D68FD724199D391C00D0B478 /* createPopover.png in Resources */ = {isa = PBXBuildFile; fileRef = D68FD723199D391C00D0B478 /* createPopover.png */; };
@@ -47,7 +61,7 @@
 		D6B658D1199C09380037E77B /* loginScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B658D0199C09380037E77B /* loginScreen.png */; };
 		D6B658D4199C12F70037E77B /* DashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B658D3199C12F70037E77B /* DashboardViewController.m */; };
 		D6B658D6199C1FD10037E77B /* createPage.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B658D5199C1FD10037E77B /* createPage.png */; };
-		D6B658D9199C22F00037E77B /* CreateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B658D8199C22F00037E77B /* CreateViewController.m */; };
+		D6B658D9199C22F00037E77B /* CreateTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B658D8199C22F00037E77B /* CreateTableViewController.m */; };
 		D6B658DB199C33980037E77B /* TeamScreen.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D6B658DA199C33980037E77B /* TeamScreen.PNG */; };
 		D6B658DD199C352C0037E77B /* ActionScreen.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D6B658DC199C352C0037E77B /* ActionScreen.PNG */; };
 		D6B658DF199C35C90037E77B /* createPage2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B658DE199C35C90037E77B /* createPage2.png */; };
@@ -115,10 +129,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D604D64019C79BE0004E1E5A /* CategoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewController.h; sourceTree = "<group>"; };
+		D604D64119C79BE0004E1E5A /* CategoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewController.m; sourceTree = "<group>"; };
+		D604D64319C7A001004E1E5A /* Idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Idea.h; sourceTree = "<group>"; };
+		D604D64419C7A001004E1E5A /* Idea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Idea.m; sourceTree = "<group>"; };
+		D604D64619C7A78B004E1E5A /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewCell.h; sourceTree = "<group>"; };
+		D604D64719C7A78B004E1E5A /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewCell.m; sourceTree = "<group>"; };
 		D6064A1319A2C14C0004281F /* ChallengesBackgroundImage1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ChallengesBackgroundImage1.png; sourceTree = "<group>"; };
 		D6492B3B19BF5B5F00E1FFD8 /* Invent Value Crown 120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Invent Value Crown 120.png"; sourceTree = "<group>"; };
 		D6599BF419BA7D1900CA984D /* LoginBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoginBackground.png; sourceTree = "<group>"; };
 		D6599BF619BA82EC00CA984D /* Dashboard_Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dashboard_Background.png; sourceTree = "<group>"; };
+		D65D92EF19C8F25B00696E1A /* Idea Icon 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Idea Icon 25.png"; sourceTree = "<group>"; };
+		D65D92F019C8F25B00696E1A /* Idea Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Idea Icon 50.png"; sourceTree = "<group>"; };
+		D65D92F419C8F3D100696E1A /* Team Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Team Icon 50.png"; sourceTree = "<group>"; };
+		D65D92F719C8F49F00696E1A /* Team Icon 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Team Icon 25.png"; sourceTree = "<group>"; };
+		D65D92F919C8F58100696E1A /* Star Icon 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star Icon 25.png"; sourceTree = "<group>"; };
+		D65D92FA19C8F58100696E1A /* Star Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Star Icon 50.png"; sourceTree = "<group>"; };
+		D65D92FD19C8F6FD00696E1A /* Pencil Icon 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pencil Icon 25.png"; sourceTree = "<group>"; };
+		D65D92FE19C8F6FD00696E1A /* Pencil Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pencil Icon 50.png"; sourceTree = "<group>"; };
 		D67693F019C12E1B001D87F1 /* IdeateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IdeateSectionHeader.png; sourceTree = "<group>"; };
 		D67693F419C233A5001D87F1 /* CollaborateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CollaborateSectionHeader.png; sourceTree = "<group>"; };
 		D67693F619C23581001D87F1 /* EvaluateSectionHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EvaluateSectionHeader.png; sourceTree = "<group>"; };
@@ -133,6 +161,9 @@
 		D676940E19C2516B001D87F1 /* IdeaAttachmentFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = IdeaAttachmentFileProvider.entitlements; sourceTree = "<group>"; };
 		D676940F19C2516B001D87F1 /* FileProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileProvider.h; sourceTree = "<group>"; };
 		D676941019C2516B001D87F1 /* FileProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileProvider.m; sourceTree = "<group>"; };
+		D67781C619C8EDFA00DE3BDB /* Home Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home Icon.png"; sourceTree = "<group>"; };
+		D67781C819C8EEC000DE3BDB /* Home Icon 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home Icon 25.png"; sourceTree = "<group>"; };
+		D67781CA19C8EEC800DE3BDB /* Home Icon 50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Home Icon 50.png"; sourceTree = "<group>"; };
 		D67C0CD619C7738500749382 /* DescriptionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionTableViewCell.h; sourceTree = "<group>"; };
 		D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescriptionTableViewCell.m; sourceTree = "<group>"; };
 		D68698EA19C39E21005E5A46 /* ChallengeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeDetailViewController.h; sourceTree = "<group>"; };
@@ -171,8 +202,8 @@
 		D6B658D2199C12F70037E77B /* DashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardViewController.h; sourceTree = "<group>"; };
 		D6B658D3199C12F70037E77B /* DashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardViewController.m; sourceTree = "<group>"; };
 		D6B658D5199C1FD10037E77B /* createPage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createPage.png; sourceTree = "<group>"; };
-		D6B658D7199C22F00037E77B /* CreateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateViewController.h; sourceTree = "<group>"; };
-		D6B658D8199C22F00037E77B /* CreateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateViewController.m; sourceTree = "<group>"; };
+		D6B658D7199C22F00037E77B /* CreateTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTableViewController.h; sourceTree = "<group>"; };
+		D6B658D8199C22F00037E77B /* CreateTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTableViewController.m; sourceTree = "<group>"; };
 		D6B658DA199C33980037E77B /* TeamScreen.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeamScreen.PNG; sourceTree = "<group>"; };
 		D6B658DC199C352C0037E77B /* ActionScreen.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ActionScreen.PNG; sourceTree = "<group>"; };
 		D6B658DE199C35C90037E77B /* createPage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = createPage2.png; sourceTree = "<group>"; };
@@ -349,6 +380,17 @@
 		D6B6586C199BE9420037E77B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D65D92FD19C8F6FD00696E1A /* Pencil Icon 25.png */,
+				D65D92FE19C8F6FD00696E1A /* Pencil Icon 50.png */,
+				D65D92F919C8F58100696E1A /* Star Icon 25.png */,
+				D65D92FA19C8F58100696E1A /* Star Icon 50.png */,
+				D65D92F719C8F49F00696E1A /* Team Icon 25.png */,
+				D65D92F419C8F3D100696E1A /* Team Icon 50.png */,
+				D65D92EF19C8F25B00696E1A /* Idea Icon 25.png */,
+				D65D92F019C8F25B00696E1A /* Idea Icon 50.png */,
+				D67781C819C8EEC000DE3BDB /* Home Icon 25.png */,
+				D67781CA19C8EEC800DE3BDB /* Home Icon 50.png */,
+				D67781C619C8EDFA00DE3BDB /* Home Icon.png */,
 				D67693F019C12E1B001D87F1 /* IdeateSectionHeader.png */,
 				D67693F419C233A5001D87F1 /* CollaborateSectionHeader.png */,
 				D67693F619C23581001D87F1 /* EvaluateSectionHeader.png */,
@@ -380,8 +422,8 @@
 				D6B65843199BE8FB0037E77B /* ViewController.m */,
 				D6B658D2199C12F70037E77B /* DashboardViewController.h */,
 				D6B658D3199C12F70037E77B /* DashboardViewController.m */,
-				D6B658D7199C22F00037E77B /* CreateViewController.h */,
-				D6B658D8199C22F00037E77B /* CreateViewController.m */,
+				D6B658D7199C22F00037E77B /* CreateTableViewController.h */,
+				D6B658D8199C22F00037E77B /* CreateTableViewController.m */,
 				D67C0CD619C7738500749382 /* DescriptionTableViewCell.h */,
 				D67C0CD719C7738500749382 /* DescriptionTableViewCell.m */,
 				D68FD72E199D6C9100D0B478 /* CreateChallengeViewController.h */,
@@ -390,6 +432,10 @@
 				D6D2B87C19C0C58100EB20B2 /* NetworkController.m */,
 				D68698EA19C39E21005E5A46 /* ChallengeDetailViewController.h */,
 				D68698EB19C39E21005E5A46 /* ChallengeDetailViewController.m */,
+				D604D64019C79BE0004E1E5A /* CategoryTableViewController.h */,
+				D604D64119C79BE0004E1E5A /* CategoryTableViewController.m */,
+				D604D64619C7A78B004E1E5A /* CategoryTableViewCell.h */,
+				D604D64719C7A78B004E1E5A /* CategoryTableViewCell.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -399,6 +445,8 @@
 			children = (
 				D6D2B88119C0C66E00EB20B2 /* User.h */,
 				D6D2B88219C0C66E00EB20B2 /* User.m */,
+				D604D64319C7A001004E1E5A /* Idea.h */,
+				D604D64419C7A001004E1E5A /* Idea.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -556,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6599BF719BA82EC00CA984D /* Dashboard_Background.png in Resources */,
+				D65D92FB19C8F58100696E1A /* Star Icon 25.png in Resources */,
 				D6B658E9199C421E0037E77B /* starIcon.png in Resources */,
 				D6B658C1199BE9420037E77B /* keyboard.png in Resources */,
 				D6599BF519BA7D1900CA984D /* LoginBackground.png in Resources */,
@@ -563,15 +612,22 @@
 				D6B658EB199C43D80037E77B /* createScreen3.png in Resources */,
 				D6B658E1199C41920037E77B /* IdeaVault.png in Resources */,
 				D6B658A3199BE9420037E77B /* keyboard.png in Resources */,
+				D65D92F619C8F3D100696E1A /* Team Icon 50.png in Resources */,
+				D67781C919C8EEC000DE3BDB /* Home Icon 25.png in Resources */,
 				D67693F519C233A5001D87F1 /* CollaborateSectionHeader.png in Resources */,
+				D65D92FF19C8F6FD00696E1A /* Pencil Icon 25.png in Resources */,
 				D6B658DB199C33980037E77B /* TeamScreen.PNG in Resources */,
 				D6B658A1199BE9420037E77B /* Icon.png in Resources */,
 				D6B658A2199BE9420037E77B /* IV dashboard.png in Resources */,
 				D6B658D1199C09380037E77B /* loginScreen.png in Resources */,
 				D6B65847199BE8FB0037E77B /* Main.storyboard in Resources */,
+				D65D92F819C8F49F00696E1A /* Team Icon 25.png in Resources */,
 				D6492B3C19BF5B5F00E1FFD8 /* Invent Value Crown 120.png in Resources */,
+				D65D92F119C8F25B00696E1A /* Idea Icon 25.png in Resources */,
 				D6B658DD199C352C0037E77B /* ActionScreen.PNG in Resources */,
+				D65D92F219C8F25B00696E1A /* Idea Icon 50.png in Resources */,
 				D6B658DF199C35C90037E77B /* createPage2.png in Resources */,
+				D67781C719C8EDFA00DE3BDB /* Home Icon.png in Resources */,
 				D6B658E6199C421E0037E77B /* dashboard.png in Resources */,
 				D6B658A7199BE9420037E77B /* navBar.png in Resources */,
 				D68FD732199D6E9E00D0B478 /* createChallenge.001.png in Resources */,
@@ -584,11 +640,14 @@
 				D68FD726199D3A3000D0B478 /* createPopover2.png in Resources */,
 				D6B658BE199BE9420037E77B /* dashboardData.png in Resources */,
 				D6B658BD199BE9420037E77B /* Challenges.png in Resources */,
+				D67781CB19C8EEC800DE3BDB /* Home Icon 50.png in Resources */,
 				D67693F719C23581001D87F1 /* EvaluateSectionHeader.png in Resources */,
+				D65D930019C8F6FD00696E1A /* Pencil Icon 50.png in Resources */,
 				D6B658C0199BE9420037E77B /* IV dashboard.png in Resources */,
 				D6B658E8199C421E0037E77B /* teamIcon.png in Resources */,
 				D6B658A0199BE9420037E77B /* dashboardData.png in Resources */,
 				D6B6589F199BE9420037E77B /* Challenges.png in Resources */,
+				D65D92FC19C8F58100696E1A /* Star Icon 50.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,11 +682,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6D2B88319C0C66E00EB20B2 /* User.m in Sources */,
+				D604D64219C79BE0004E1E5A /* CategoryTableViewController.m in Sources */,
 				D68FD730199D6C9100D0B478 /* CreateChallengeViewController.m in Sources */,
 				D6B658D4199C12F70037E77B /* DashboardViewController.m in Sources */,
+				D604D64519C7A001004E1E5A /* Idea.m in Sources */,
 				D6B65844199BE8FB0037E77B /* ViewController.m in Sources */,
+				D604D64819C7A78B004E1E5A /* CategoryTableViewCell.m in Sources */,
 				D67C0CD819C7738500749382 /* DescriptionTableViewCell.m in Sources */,
-				D6B658D9199C22F00037E77B /* CreateViewController.m in Sources */,
+				D6B658D9199C22F00037E77B /* CreateTableViewController.m in Sources */,
 				D6D2B87D19C0C58100EB20B2 /* NetworkController.m in Sources */,
 				D68698EC19C39E21005E5A46 /* ChallengeDetailViewController.m in Sources */,
 				D6B65841199BE8FB0037E77B /* AppDelegate.m in Sources */,
