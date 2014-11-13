@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *categoryPickerView;
 @property (strong, nonatomic) NSArray *categoryArray;
 @property (weak, nonatomic) IBOutlet CategoryTableViewController *categoryCell;
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
+
 
 @end
 
